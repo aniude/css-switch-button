@@ -1,0 +1,131 @@
+/* switch button 切换按钮*/
+.u-switch-onoff {
+    position: relative;
+    width: 60px;
+    height: 34px;
+    border-radius: 100px;
+    background-color: #d9d9d9;
+    overflow: hidden;
+}
+
+.u-switch-onoff .check {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 6;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.u-switch-onoff .switch {
+    left: 2px;
+    top: 3px;
+    bottom: 2px;
+    right: 28px;
+    background-color: #fff;
+    border-radius: 36px;
+    z-index: 1;
+}
+
+.u-switch-onoff .track {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.u-switch-onoff .switch, .u-switch-onoff .track {
+    position: absolute;
+}
+
+.u-switch-onoff .check:checked + .switch {
+    right: 2px;
+    left: 28px;
+}
+
+.u-switch-onoff .check:checked ~ .track {
+    box-shadow: inset 0 0 0 40px #03a9f4;
+}
+
+.u-switch-radio {
+    border-radius: 100%;
+    background-color: #d9d9d9;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.u-switch-radio .switch {
+    background-color: #fff;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.u-switch-radio .check {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor:pointer;
+    z-index: 6;
+}
+
+.u-switch-radio .check:checked + .switch {
+    background-color: #03a9f4;
+}
+
+.u-switch-checkbox {
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+
+.u-switch-checkbox .check, .u-switch-checkbox .switch {
+    position: absolute;
+}
+
+.u-switch-checkbox .check {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 6;
+}
+
+.u-switch-checkbox .switch {
+    background: #eee;
+    border: 1px solid #ddd;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+}
+
+.u-switch-checkbox .switch .tick {
+    border: 3px solid #03a9f4;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    position: absolute;
+    height: 5px;
+    width: 9px;
+    top: 6px;
+    left: 7px;
+    opacity: 0.2;
+}
+
+.u-switch-checkbox .check:checked + .switch .tick {
+    opacity: 1;
+}
+
+
+
